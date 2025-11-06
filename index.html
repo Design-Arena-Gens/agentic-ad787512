@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Bhole Weather AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="icon">🕉️🔱</div>
+            <h1 class="title">Jay Bhole Weather AI</h1>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="cityInput" placeholder="शहर का नाम दर्ज करें / Enter city name" />
+            <button id="getWeatherBtn">Get Weather</button>
+        </div>
+
+        <div id="weatherDisplay" class="weather-display hidden">
+            <div class="weather-card">
+                <h2 id="cityName"></h2>
+                <div class="weather-info">
+                    <div class="info-item">
+                        <span class="label">🌡️ तापमान (Temperature):</span>
+                        <span class="value" id="temperature"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">💧 नमी (Humidity):</span>
+                        <span class="value" id="humidity"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">🌧️ बारिश की संभावना (Rain Chance):</span>
+                        <span class="value" id="rainChance"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">☁️ मौसम (Weather):</span>
+                        <span class="value" id="weather"></span>
+                    </div>
+                </div>
+                <div class="advice-section">
+                    <h3>🙏 मौसम सलाह (Season Advice):</h3>
+                    <p id="advice"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorDisplay" class="error-display hidden"></div>
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>मौसम की जानकारी प्राप्त की जा रही है...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
